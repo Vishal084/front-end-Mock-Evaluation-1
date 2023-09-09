@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock-Evaluation</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .main-container {
+            border: 2px solid black;
+            height: 700px;
+            width: 1400px;
+            margin: auto;
+        }
+
+        .grandfather {
+            border: 2px dotted black;
+            height: 670px;
+            width: 1390px;
+            margin: auto;
+            margin-top: 8px;
+            margin-left: 4px;
+            display: flex;
+        }
+
+        .father {
+            border: 2px dotted black;
+            height: 620px;
+            width: 670px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+
+        .uncle {
+            border: 2px dotted black;
+            height: 620px;
+            width: 690px;
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 4px;
+        }
+
+        .person-1 {
+            border: 2px dotted black;
+            height: 570px;
+            width: 410px;
+            margin-left: 20px;
+            margin-top: 20px;
+            display: flex;
+        }
+
+        .child-1 {
+            border: 1px solid rgb(11, 11, 11);
+            height: 470px;
+            width: 60px;
+            margin-top: 40px;
+            margin-left: 20px;
+        }
+
+        .one {
+            height: 45px;
+            width: 30px;
+            border: 2px dotted black;
+            margin-top: 10px;
+            margin-left: 15px;
+        }
+
+        .one > p {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        /* second-part */
+        p {
+            text-align: center;
+        }
+
+        .person-1-uncle {
+            height: 50px;
+            width: 590px;
+            margin-top: 10px;
+            margin-left: 19px;
+            border: 2px dotted black;
+        }
+
+        .person-2 {
+            height: 400px;
+            width: 590px;
+            margin-top: 10px;
+            margin-left: 19px;
+            border: 2px dotted black;
+        }
+
+        .person-3 {
+            height: 50px;
+            width: 590px;
+            margin-top: 10px;
+            margin-left: 19px;
+            border: 2px dotted black;
+        }
+
+        .child-1-uncle {
+            margin: auto;
+            height: 50px;
+            width: 540px;
+            margin-top: 10px;
+            border: 1px solid black;
+        }
+
+        .child-2 {
+            margin: auto;
+            height: 230px;
+            width: 540px;
+            margin-top: 10px;
+            padding: 20px;
+        }
+
+        .one-uncle,
+        .two,
+        .three {
+            border: 1px dotted black;
+            width: 480px;
+            height: 50px;
+            margin-top: 10px;
+            margin-left: 8px;
+        }
+
+        .one-uncle {
+            background-color: orange;
+        }
+
+        .two {
+            background-color: white;
+        }
+
+        .three {
+            background-color: rgb(32, 97, 2);
+        }
+
+        .paragraph {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="main-container">
+    <div class="grandfather">
+        grandfather
+        <div class="father">
+            father
+            <div class="person-1">
+                person-1
+                <div class="child-1">
+                    child-1
+                </div>
+                <div class="child-1">
+                    child-2
+                </div>
+                <div class="child-1">
+                    child-3
+                    <div class="one">
+                        <p>1</p>
+                    </div>
+                    <div class="one">
+                        <p>2</p>
+                    </div>
+                    <div class="one">
+                        <p>3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- second part -->
+
+        <div class="uncle">
+            <p>uncle</p>
+            <div class="person-1-uncle">
+                <p>person-1</p>
+            </div>
+            <div class="person-2">
+                <p>person-2</p>
+                <div class="child-1-uncle">
+                    <p>child-1</p>
+                </div>
+                <div class="child-2">
+                    <p>child-2</p>
+                    <div class="one-uncle">
+                        <p class="paragraph">1</p>
+                    </div>
+                    <div class="two">
+                        <p class="paragraph">2</p>
+                    </div>
+                    <div class="three">
+                        <p class="paragraph">3</p>
+                    </div>
+                </div>
+                <div class="child-1-uncle">
+                    <p>child-3</p>
+                </div>
+            </div>
+            <div class="person-3">
+                <p>person-3</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
